@@ -53,10 +53,10 @@ export default function Sidebar({ activeTab, setActiveTab }) {
       <div className="p-4 border-b border-slate-800 flex items-center gap-3">
         <div className="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center overflow-hidden shrink-0">
           <img
-            src={settings?.logo_url || '/uploads/default_logo.svg'}
+            src={settings?.logo_url || '/logo.jpg'}
             alt="Alis Valves Logo"
             className="w-full h-full object-contain p-1"
-            onError={(e) => { e.target.src = '/uploads/default_logo.svg'; }}
+            onError={(e) => { e.target.src = '/logo.jpg'; }}
           />
         </div>
         <div className="overflow-hidden">
