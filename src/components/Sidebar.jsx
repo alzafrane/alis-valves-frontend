@@ -51,11 +51,11 @@ export default function Sidebar({ activeTab, setActiveTab }) {
     <aside className="w-64 bg-slate-900 border-r border-slate-800 flex flex-col h-screen sticky top-0 z-30 select-none no-print">
       {/* Brand Header & Logo */}
       <div className="p-4 border-b border-slate-800 flex items-center gap-3">
-        <div className="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center overflow-hidden shrink-0">
+        <div className="w-14 h-14 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center overflow-hidden shrink-0">
           <img
             src={settings?.logo_url || '/logo.jpg'}
             alt="Alis Valves Logo"
-            className="w-full h-full object-contain p-1"
+            className="w-full h-full object-contain p-0"
             onError={(e) => { e.target.src = '/logo.jpg'; }}
           />
         </div>
